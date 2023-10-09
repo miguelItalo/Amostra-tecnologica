@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background: #4B7FA6;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    width: 350px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#menu {
+    margin: .5rem;
+}
+
+nav input {
+    width: 232px;
+    border-radius: 30px;
+    border: none;
+    padding: .5rem;
+    background-color: #3D6A8B;
+}
+
+.logo-img img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.search {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.login-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-btn {
+    background: #30546E;
+    border: none;
+    width: 123px;
+    border-radius: 30px;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao_site {
+    width: 100%;
+    background: #5893BD;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.linha {
+    border: 1px solid #000;
+}
+
+.boas_vindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao_site h1 {
+    font-size: 36px;
+}
+
+.apresentacao_site p {
+    font-size: 24px;
+    padding: 1rem;
+    line-height: normal;
+    width: 500px;
+}
+
+.descartar_lixos {
+    width: 100%;
+    background: #4B7FA6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.descartar_lixos h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 3rem;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: 'Itim', cursive;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.container_celular,
+.container_tv,
+.container_liquidificador,
+.container_geladeira {
+    position: relative;
+}
+
+.container_celular p,
+.container_tv p,
+.container_liquidificador p,
+.container_geladeira p {
+    line-height: normal;
+    margin: 1rem;
+
+}
+
+.containers .img {
+    border-radius: 10px;
+    position: absolute;
+    top: -50px;
+    z-index: 1;
+}
+
+.lixeiraVerde_img,
+.lixeiraMarrom_img,
+.lixeiraAzul_img,
+.lixeiraBranca_img {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container_celular {
+    background: #3A7854;
+    width: 260px;
+    height: 728px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container_tv {
+    background: #755543;
+    width: 260px;
+    height: 728px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container_liquidificador {
+    background: #26698E;
+    width: 260px;
+    height: 728px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container_geladeira {
+    background: #CADAE5;
+    width: 260px;
+    height: 728px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cadastro_login {
+    background: #26698E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.cadastro {
+    width: 744px;
+    height: 923px;
+    background: #5893BD;
+    border-radius: 30px;
+    font-family: 'Itim', cursive;
+    margin-top: 5rem;
+}
+
+.cadastro .form_control {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+.cadastro .form_control input {
+    width: 630px;
+    display: flex;
+    background: #4B7FA6;
+    border-radius: 30px;
+    border: none;
+    padding: 1rem;
+    font-size: 24px;
+}
+
+.cadastro {
+    text-align: center;
+}
+
+.cadastro .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    font-size: 48px;
+    margin: 2rem;
+}
+
+.cadastro input[type="submit"] {
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background: #4B7FA6;
+    cursor: pointer;
+}
+
+.form_control label {
+    font-size: 24px;
+    font-family: 'Itim', cursive;
+    text-align: left;
+    margin: 1rem;
+}
+
+input[type="submit"] {
+    width: 252px;
+    border-radius: 30px;
+    background: #58A4DD;
+    padding: 1rem;
+    border: none;
+    font-size: 32px;
+    margin-top: 1rem;
+    font-family: 'Itim', cursive;
+}
+
+.form {
+    display: flex;
+    gap: .5rem;
+    margin: .5rem;
+    font-size: 20px;
+}
+
+.login {
+    width: 517px;
+    height: 923px;
+    background: #5893BD;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.login .form_control {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Itim', cursive;
+}
+
+.login button {
+    width: 421px;
+    height: 73px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #58A4DD;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.login .form_control input {
+    width: 391px;
+    background: #4B7FA6;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 24px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: #4B7FA6;
+}
+
+@media (max-width: 1023px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    ul {
+        width: 100%;
+        align-items: center;
+        padding-top: .5rem;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .apresentacao_site {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apresentacao_site h1 {
+        font-size: 30px;
+    }
+
+    .apresentacao_site .img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .linha {
+        width: 100%;
+    }
+
+    .apresentacao_site p {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    .containers {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .container_celular {
+        margin-bottom: 2rem;
+    }
+
+    .container_tv,
+    .container_liquidificador,
+    .container_geladeira {
+        margin: 2rem;
+        margin-top: 2rem;
+    }
+
+    .container_celular p,
+    .container_tv p,
+    .container_liquidificador p,
+    .container_geladeira p {
+        margin-top: 5rem;
+    }
+
+    .cadastro_login {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cadastro {
+        width: 100%;
+        margin-top: 1rem;
+        height: 980px;
+    }
+
+    .cadastro .form_control input {
+        width: 100%;
+    }
+
+    .login {
+        width: 100%;
+        margin-top: 1rem;
+        height: 980px;
+    }
+
+    .login .form_control input {
+        width: 100%;
+    }
+
+    .login button {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .apresentacao_site {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linha {
+        width: 100%;
+    }
+
+    .apresentacao_site .img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .apresentacao_site p {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .containers {
+        gap: .5rem;
+    }
+
+    .container_celular,
+    .container_tv,
+    .container_liquidificador,
+    .container_geladeira {
+        width: 240px;
+
+    }
+
+    .container_celular p,
+    .container_tv p,
+    .container_liquidificador p,
+    .container_geladeira p {
+        margin-top: 5rem;
+    }
+
+    .cadastro_login {
+        gap: .5rem;
+    }
+
+    .cadastro {
+        width: 500px;
+        margin-top: 5rem;
+    }
+
+    .cadastro .form_control input {
+        width: 100%;
+    }
+
+    .cadastro .form_control label {
+        margin-left: 1rem;
+    }
+
+    .login {
+        width: 500px;
+        margin-top: 5rem;
+    }
+
+    .login .form_control input {
+        margin: .5rem;
+    }
+
+    .login button {
+        width: 421px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .apresentacao_site .img {
+        width: 600px;
+        height: 500px;
+    }
+
+    .linha {
+        margin: 1rem;
+    }
+
+    .cadastro .form_control label {
+        margin-left: 1rem;
+    }
+
+    .cadastro .form_control input {
+        margin-left: 1rem;
+    }
+
+    .login .form_control input {
+        margin: .5rem;
+    }
+
+    .container_celular p,
+    .container_geladeira p,
+    .container_liquidificador p,
+    .container_tv p {
+        margin-top: 5rem;
+    }
+}

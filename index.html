@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="" id="menu"><img src="./img/🦆 icon _menu_.png" alt="" width="40px" height="35px"></a></li>
+            <li><a href="" id="home"><img src="./img/🦆 icon _home_.png" alt="" width="40px" height="35px"></a></li>
+        </ul>
+
+        <div class="logo-img">
+            <img src="./img/logo.png" alt="" width="80px" height="80px">
+        </div>
+
+        <div class="search">
+            <form action="" method="get">
+                <input type="text" name="pesquisa" placeholder="Search here">
+                <button class="search-btn" type="submit"><img src="./img/🦆 icon _magnifying glass_.png"
+                        alt=""></button>
+
+
+            </form>
+
+            <button class="login-btn"><a href="">Login</a></button>
+        </div>
+    </nav>
+
+
+
+
+    <main>
+        <section class="apresentacao_site">
+            <article>
+                <img class="img" src="./img/lixo_eletrônico.png" alt="Lixo eletrônico">
+            </article>
+
+            <article class="texto">
+                <div class="boas_vindas">
+                    <h1>Bem-vindo ao ETS </h1>
+                    <img src="./img/logo.png" alt="Logo" width="177px" height="157px">
+                </div>
+
+                <div class="linha"></div>
+
+                <p>Bem-vindo ao nosso site dedicado à destinação responsável de lixo eletrônico! Estamos aqui para
+                    ajudar você a entender a importância de descartar seus dispositivos eletrônicos antigos de forma
+                    adequada, protegendo o meio ambiente e promovendo a reciclagem. Navegue pelo nosso conteúdo para
+                    obter informações sobre como descartar seus eletrônicos de maneira sustentável e encontrar locais de
+                    reciclagem próximos a você. Juntos, podemos fazer a diferença no futuro do nosso planeta. Junte-se a
+                    nós nesta jornada para um mundo mais limpo e sustentável.</p>
+            </article>
+        </section>
+
+        <section class="descartar_lixos">
+            <h1>Como descartar eletrônicos de forma segura e com responsabilidade.</h1>
+
+            <article class="containers">
+                <div class="container_celular">
+                    <img class="img" src="./img/celular.png" alt="">
+                    <p>Celulares, notebooks, impressoras, tablets, mouses, teclados, computadores de mesa, carregadores,
+                        fones de ouvido, cabos, pilhas, baterias, etc.</p>
+                    <img class="lixeiraVerde_img" src="./img/lixeira_verde.png" alt="">
+                </div>
+
+                <div class="container_tv">
+                    <img class="img" src="./img/tv.png" alt="">
+                    <p>Tvs, Equipamentos de DVD/VHS, aparelhos de som, filmadoras, monitores de tubo, LCD e LED.</p>
+                    <img class="lixeiraMarrom_img" src="./img/lixeira_marrom.png" alt="">
+                </div>
+
+                <div class="container_liquidificador">
+                    <img class="img" src="./img/liquidificador.png" alt="">
+                    <p>Eletrodomésticos portáteis em geral, como batedeiras, liquidificadores, ferros elétricos,
+                        secadores de cabelo. </p>
+                    <img class="lixeiraAzul_img" src="./img/lixeira_azul.png" alt="">
+                </div>
+
+                <div class="container_geladeira">
+                    <img class="img" src="./img/geladeira.png" alt="">
+                    <p>Objetos de grande porte, como geladeiras, fogões, máquinas de lavar, Ar-condicionado,
+                        Micro-ondas, Frigobar. </p>
+                    <img class="lixeiraBranca_img" src="./img/lixeira_branca.png" alt="">
+                </div>
+            </article>
+        </section>
+
+        <section class="cadastro_login">
+            <article class="cadastro">
+              <!-- section === form -->
+                <section id="cadastro">
+                    <div class="cabecalho">
+                        <h1>Cadastre-se</h1>
+                        <img src="./img/plantinha.png" alt="">
+                    </div>
+
+                    <div class="form_control">
+                        <label for="name">Nome de usuário</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="password_confirm">Repetição da Senha</label>
+                        <input type="password" name="password_confirm" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form">
+                        <input type="checkbox" name="remember" checked>
+                        <label for="remember">Lembre-se de mim</label>
+                    </div>
+                    <div class="form">
+                        <input type="checkbox" name="information" checked>
+                        <label for="information">Mantenha-me informado sobre novos locais de coleta por e-mail</label>
+                    </div>
+                    <a href="pages/locais.html"><input type="submit" value="Cadastrar"></a>
+                </section>
+            </article>
+
+            <article class="login">
+                <img id="profile" src="./img/icon _profile circle_.png" alt="" width="235px" height="235px">
+                <button id="loginGoogle"> <img src="./img/🦆 icon _google_.png" alt="">Login com o Google</button>
+                <button id="loginMicrosoft"><img src="./img/🦆 icon _microsoft_.png" alt="">Login com a
+                    Microsoft</button>
+
+                    <!-- section === form -->
+                <section>
+                    <div class="form_control">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form_control">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <a href="pages/locais.html"><input type="submit" value="Login"></a>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

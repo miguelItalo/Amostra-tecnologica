@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <link rel="stylesheet" href="../css/parte3.css">
+  <title>Cadastro de um item</title>
+</head>
+<body>
+
+  <!-- cabecalho -->
+
+  <main>
+    <section>
+      <div class="left-conteudo">
+        <div class="heade">
+          <h1>Descreva o item que deseja descartar</h1>
+        </div>
+        <div class="caixa-icons">
+          <aside class="icons">
+            <span class="phone-Green"><img src="../svg/phone.svg" alt="phone"></span>
+            <input type="radio" name="tipoItem" id="phoneRadio">
+          </aside>
+          <aside class="icons">
+            <span class="tv-Brown"><img src="../svg/tv.svg" alt="tv"></span>
+            <input type="radio" name="tipoItem" id="tvRadio">
+          </aside>
+          <aside class="icons">
+            <span class="blender-Blue"><img src="../svg/blender.svg" alt="blender"></span>
+            <input type="radio" name="tipoItem" id="blenderRadio">
+          </aside>
+          <aside class="icons">
+            <span class="fridge-White"><img src="../svg/fridge.svg" alt="fridge"></span>
+            <input type="radio" name="tipoItem" id="fridgeRadio">
+          </aside>
+        </div>
+
+       <div class="caixa-descricao">
+        <textarea name="descricao" id="descricao" cols="45" rows="10"
+        placeholder="descrição do produto, marca, peças, etc..."></textarea>
+       </div>
+
+
+        <div class="adc-Photo">
+          <form class="form" action="/upload" method="post" id="fileForm">
+            <input type="file" name="fileInput" id="fileInput" accept=".png, .jpeg">
+            <span><img src="../svg/camera.svg" alt="Adiconar foto"></span>
+          </form>
+          <div id="preview"></div>
+        </div>
+
+        <div class="informacoes">
+          <h3>Você deseja:</h3>
+          <div class="info1">
+            <input type="radio" name="desejo" value="descartar" id="descartarRadio">
+            <label for="descartarRadio">Descartar o item corretamente</label>
+          </div>
+          <div class="info2">
+            <input type="radio" name="desejo" value="vender" id="venderRadio">
+            <label for="venderRadio">Vender o item/peças do item ainda em funcionamento</label>
+          </div>
+          <div class="btn">
+            <a href="../index.html"><button type="submit" id="submit">Submit</button></a>
+          </div>
+
+          <p id="validationMessage" style="color: red;"></p>
+          <p id="successMessage" style="color: green;"></p>
+        </div>
+
+      </div>
+
+      <div class="conteudo-map">
+        <h1>Localização</h1>
+        <div class="caixa-mapid">
+          <div id="mapid"></div>
+        </div>
+          <p>O Dono do estabelecimento/comprador será notificado
+            do encaminhamento do item no local selecionado</p>
+        <!-- <h2></h2> -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../js/parte3.js"></script>
+</body>
+
+</html>
