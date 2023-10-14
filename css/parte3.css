@@ -6,9 +6,79 @@
   box-sizing: border-box;
 }
 
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+html ::-webkit-scrollbar-thumb {
+background: #238745;
+}
+html ::-webkit-scrollbar-track {
+background: #d4ff8a;
+}
 body {
-  background-color: #5893BD;
+  background-color: #B7E469;
   font-family: 'Itim', cursive;
+}
+nav {
+    background: #8BB83D;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ul {
+    width: 350px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+#menu {
+    margin: .5rem;
+}
+nav input {
+    width: 232px;
+    border-radius: 30px;
+    border: none;
+    padding: .5rem;
+    background-color: #416601;
+    color: #fff;
+}
+nav input::placeholder{
+    color: #fff;
+}
+.logo-img img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.search {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.login-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-btn {
+    background: #416601;
+    border: none;
+    width: 123px;
+    border-radius: 30px;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: none;
 }
 
 section {
@@ -71,7 +141,7 @@ section {
 }
 
 .caixa-descricao textarea {
-  background-color: #4B7FA6;
+  background-color: #D3CF81;
   border-radius: 20px;
   color: #FFFFFF;
   border: 1px solid #000000;
@@ -154,8 +224,12 @@ input[type="radio"]{
   border: none;
   cursor: pointer;
 }
-
-
+#fileInput{
+    background-color: #8BB83D ;
+}
+#submit{
+    background-color: #416601;
+}
 /* Conteúdo do mapa */
 .conteudo-map {
   display: flex;
@@ -166,11 +240,11 @@ input[type="radio"]{
 .conteudo-map h1 {
   text-align: right;
   margin-right: 26px;
-  color: #CADAE5;
+  color: #000;
   font-size: 36px;
 }
 .conteudo-map p {
-  color: #CADAE5;
+  color: #000;
   width: 530px;
   font-size: 16pt;
   margin: -4px auto;

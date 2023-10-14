@@ -5,36 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* *::-webkit-scrollbar-corner{
 
-
+} */
+html ::-webkit-scrollbar {
+    width: 10px;
+  }
+html ::-webkit-scrollbar-thumb {
+background: #238745;
+}
+html ::-webkit-scrollbar-track {
+background: #d4ff8a;
+}
 nav {
-    background: #4B7FA6;
+    background: #8BB83D;
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-
 ul {
     width: 350px;
     list-style: none;
     display: flex;
     gap: 1rem;
 }
-
 #menu {
     margin: .5rem;
 }
-
 nav input {
     width: 232px;
     border-radius: 30px;
     border: none;
     padding: .5rem;
-    background-color: #3D6A8B;
+    background-color: #416601;
+    color: #fff;
 }
-
+nav input::placeholder{
+    color: #fff;
+}
 .logo-img img {
     width: 80px;
     height: 80px;
@@ -56,7 +66,7 @@ button.login-btn a {
 }
 
 .login-btn {
-    background: #30546E;
+    background: #416601;
     border: none;
     width: 123px;
     border-radius: 30px;
@@ -78,7 +88,7 @@ main {
 
 .apresentacao_site {
     width: 100%;
-    background: #5893BD;
+    background: #B7E469;
     display: flex;
     font-family: 'Inter', sans-serif;
     gap: 2rem;
@@ -95,6 +105,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .apresentacao_site h1 {
@@ -110,7 +121,7 @@ main {
 
 .descartar_lixos {
     width: 100%;
-    background: #4B7FA6;
+    background: #8BB83D;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +223,7 @@ main {
 }
 
 .cadastro_login {
-    background: #26698E;
+    background: #B7E469;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +235,7 @@ main {
 .cadastro {
     width: 744px;
     height: 923px;
-    background: #5893BD;
+    background: #8BB83D;
     border-radius: 30px;
     font-family: 'Itim', cursive;
     margin-top: 5rem;
@@ -239,7 +250,7 @@ main {
 .cadastro .form_control input {
     width: 630px;
     display: flex;
-    background: #4B7FA6;
+    background: #D3CF81;
     border-radius: 30px;
     border: none;
     padding: 1rem;
@@ -262,7 +273,7 @@ main {
 }
 
 input[type="submit"]:hover {
-    background: #4B7FA6;
+    background: #D3CF81;
     cursor: pointer;
 }
 
@@ -276,7 +287,7 @@ input[type="submit"]:hover {
 input[type="submit"] {
     width: 252px;
     border-radius: 30px;
-    background: #58A4DD;
+    background: #D3CF81;
     padding: 1rem;
     border: none;
     font-size: 32px;
@@ -294,7 +305,7 @@ input[type="submit"] {
 .login {
     width: 517px;
     height: 923px;
-    background: #5893BD;
+    background: #8BB83D;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -316,7 +327,7 @@ input[type="submit"] {
     height: 73px;
     padding: 1rem;
     border-radius: 10px;
-    background: #58A4DD;
+    background: #D3CF81;
     border: none;
     display: flex;
     justify-content: center;
@@ -328,7 +339,7 @@ input[type="submit"] {
 
 .login .form_control input {
     width: 391px;
-    background: #4B7FA6;
+    background: #D3CF81;
     border-radius: 10px;
     padding: 1rem;
     font-size: 24px;
@@ -340,7 +351,7 @@ button {
 }
 
 .login button:hover {
-    background: #4B7FA6;
+    background: rgba(211, 207, 129, .8);
 }
 
 @media (max-width: 1023px) {
